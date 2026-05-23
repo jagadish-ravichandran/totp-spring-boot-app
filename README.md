@@ -72,6 +72,41 @@ export TOTP_ENCRYPTION_KEY=<your-generated-key>
 mvn spring-boot:run
 ```
 
+
+---
+
+---
+
+## 🐳 Docker Support
+
+Run the application in a container using Docker.
+
+### Build the Image
+
+```bash
+docker build -t spring-boot-2fa .
+```
+
+### Run the Container
+
+```bash
+docker run -p 8080:8080 spring-boot-2fa
+```
+
+Open:
+
+```text
+http://localhost:8080
+```
+
+### Docker Notes
+
+- Multi-stage Docker build for smaller production images
+- Runs with a non-root user for improved container security
+- Uses Eclipse Temurin JRE 17 runtime image
+- Compatible with AMD64 and ARM64 platforms
+- If `TOTP_ENCRYPTION_KEY` is not provided as an environment variable, the application falls back to the value configured in `application.properties`
+
 ---
 
 ## 📁 Project Structure
