@@ -72,9 +72,6 @@ export TOTP_ENCRYPTION_KEY=<your-generated-key>
 mvn spring-boot:run
 ```
 
-
----
-
 ---
 
 ## 🐳 Docker Support
@@ -106,6 +103,28 @@ http://localhost:8080
 - Uses Eclipse Temurin JRE 17 runtime image
 - Compatible with AMD64 and ARM64 platforms
 - If `TOTP_ENCRYPTION_KEY` is not provided as an environment variable, the application falls back to the value configured in `application.properties`
+
+---
+
+---
+
+## 🎥 Demo
+
+A complete walkthrough of registration, login, TOTP setup, and OTP verification is available below.
+
+
+[▶ View Demo Video](docs/demo.mp4)
+
+### Suggested Demo Flow
+
+1. User registration
+2. Login with username/password
+3. Enable 2FA
+4. Scan QR code using Google Authenticator/Authy
+5. Verify OTP
+6. Logout and login again
+7. TOTP enforcement redirect to `/verify-2fa`
+8. Successful OTP verification and dashboard access
 
 ---
 
