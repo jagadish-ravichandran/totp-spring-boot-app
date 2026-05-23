@@ -106,8 +106,6 @@ http://localhost:8080
 
 ---
 
----
-
 ## 🎥 Demo
 
 A complete walkthrough of registration, login, TOTP setup, and OTP verification is available below.
