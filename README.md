@@ -111,7 +111,7 @@ http://localhost:8080
 A complete walkthrough of registration, login, TOTP setup, and OTP verification is available below.
 
 
-[▶ View Demo Video](docs/demo.mp4)
+[▶ View Demo Video](https://github.com/jagadish-ravichandran/totp-spring-boot-app/releases/download/v1.0.0/demo.mp4)
 
 ### Suggested Demo Flow
 
